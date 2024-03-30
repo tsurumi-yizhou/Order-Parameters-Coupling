@@ -1,0 +1,14 @@
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+
+\title{The structure of an order param define file}
+\begin{document}
+\maketitle
+The first line consists of the element name and the atom count $m$, separated by space.
+Following this are $ N_1 + N_2 + \dots + N_m $ lines, each containing l numbers.
+The first three numbers represent the atomic coordinates, while the remaining l-3 numbers represent the parameters of that specific atom.
+Subsequently, there are $ 3*(N_1 + N_2 + \dots + N_m) $ lines, each defining $a_n$ sequential parameter, represented by an integer sequence a where each $ a_i $ denotes the i-th preceding atom.
+These atoms are oriented in different directions concerning other atoms.
+Lastly, the file extension name is \(''\).xcl\(''\)
+\end{document}
